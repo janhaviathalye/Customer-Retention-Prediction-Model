@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exited Customers Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Exited Customers Dashboard</h1>
+        
+        <div class="metrics">
+            <h2>Model Performance Metrics</h2>
+            <ul>
+                <li><strong>Accuracy:</strong> {{ metrics.Accuracy }}</li>
+                <li><strong>Precision:</strong> {{ metrics.Precision }}</li>
+                <li><strong>Recall:</strong> {{ metrics.Recall }}</li>
+                <li><strong>F1 Score:</strong> {{ metrics.F1_score }}</li>
+            </ul>
+        </div>
+        
+        <div class="table-container">
+            <h2>Customers At the risk of Exiting</h2>
+            {% if exited_customers %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Surname</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for customer in exited_customers %}
+                    <tr>
+                        <td>{{ customer.CustomerId }}</td>
+                        <td>{{ customer.Surname }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p>No customers have been predicted to exit.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
