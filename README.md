@@ -46,6 +46,7 @@ finally decided on this one.
 
 ![image](https://github.com/user-attachments/assets/6e07a060-3113-40ae-a13f-c35fc8ec5b13)
 
+
 ● Exploring the type of dataset such as balanced or imbalanced and then deciding
 the performance metrics to be used
 
@@ -57,6 +58,7 @@ Customer Churn prediction, the dataset was highly imbalanced. Understanding
 this helped me to determine which performance metrics to be used for my model.
 Accuracy, which works for most models, wouldn’t work because of this
 imbalance. F-1 score, instead, was used to gauge the performances.
+
 
 ● Performing pre-processing steps on the data for it to be ready for usage by the
 model
@@ -79,6 +81,7 @@ facilitating faster and more efficient model convergence. To address class
 imbalance, SMOTE (Synthetic Minority Over-sampling Technique) was applied
 within an ImbPipeline, ensuring that the model received a balanced view of
 both churned and retained customers.
+
 
 ● Building and executing different ML models to see their respective results on the
 dataset
