@@ -39,13 +39,12 @@ customers at the risk of disengagement from the dataset provided
 
 ● Determining which dataset and what customer fields to use:
 
+<img src = "https://github.com/user-attachments/assets/6e07a060-3113-40ae-a13f-c35fc8ec5b13" width = "800"><br/>
+
 I took my time to determine the right dataset for this model as the first step to
 creating a robust ML model is to choose the right dataset and fields. I explored
 PLAID API, different Kaggle datasets and online datasets for this project and
-finally decided on this one.
-
-<img src = "https://github.com/user-attachments/assets/6e07a060-3113-40ae-a13f-c35fc8ec5b13" width = "800"><br/>
-
+finally decided on this one.<br/>
 
 ● Exploring the type of dataset such as balanced or imbalanced and then deciding
 the performance metrics to be used
