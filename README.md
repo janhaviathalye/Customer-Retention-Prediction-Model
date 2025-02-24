@@ -25,13 +25,13 @@ targeted marketing or customer service initiatives.
 
 Requirement Specifications
 
-● Dataset used: Bank Customer Churn Model Kaggle dataset
-● Pre-processing the data for usage by the model
-● Feature engineering: Created more features for model performance improvement
+● Dataset used: Bank Customer Churn Model Kaggle dataset<br/>
+● Pre-processing the data for usage by the model<br/>
+● Feature engineering: Created more features for model performance improvement<br/>
 ● ML model ensemble: Built using LightGBM, SMOTE, Hyperparameter Tuning by
-RandomizedSearchCV, Threshold Optimization and pipeline integration
+RandomizedSearchCV, Threshold Optimization and pipeline integration<br/>
 ● Backend: Python(Flask) API to automate taking in any customer dataset, run the
-Customer Retention Prediction model on it and display the results
+Customer Retention Prediction model on it and display the results<br/>
 ● Frontend: HTML & CSS used to display the customer names and id’s of
 customers at the risk of disengagement from the dataset provided
 
