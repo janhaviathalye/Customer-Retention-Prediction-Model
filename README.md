@@ -44,7 +44,7 @@ creating a robust ML model is to choose the right dataset and fields. I explored
 PLAID API, different Kaggle datasets and online datasets for this project and
 finally decided on this one.
 
-<img src = "https://github.com/user-attachments/assets/6e07a060-3113-40ae-a13f-c35fc8ec5b13" width = "1000">
+<img src = "https://github.com/user-attachments/assets/6e07a060-3113-40ae-a13f-c35fc8ec5b13" width = "800">
 
 
 ● Exploring the type of dataset such as balanced or imbalanced and then deciding
