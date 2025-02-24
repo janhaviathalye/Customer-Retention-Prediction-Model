@@ -101,6 +101,87 @@ across training folds, providing reliable and unbiased performance estimates.
 The results from these models were meticulously compared to select the
 best-performing algorithm for further refinement.
 
+● Creating a robust model for predicting customers at the risk of disengagement by
+building an ensemble combining the best models together based on their
+performances and output results
+
+<img src = "https://github.com/user-attachments/assets/7cc5dcf2-26a0-49ca-9a42-7ba502c4e86c" width = "800"><br/>
+
+To enhance prediction accuracy and model robustness, an ensemble approach
+was adopted by combining the strengths of the top-performing individual models.
+This ensemble, typically a stacking classifier, leverages the diverse perspectives
+of multiple algorithms to capture complex data patterns and improve overall
+predictive performance, particularly in identifying customers at risk of
+disengagement.
+
+The ensemble model was constructed by integrating models like LightGBM,
+Random Forest, and Logistic Regression into a stacking framework, with a
+meta-classifier (e.g., Logistic Regression) aggregating their predictions.
+Hyperparameter tuning was again performed using RandomizedSearchCV to
+optimize the ensemble's performance. The ensemble was trained within the
+same ImbPipeline, ensuring consistent preprocessing and handling of class
+imbalance. Cross-validation confirmed that the ensemble outperformed individual
+models, achieving higher F1 scores and more balanced precision-recall
+trade-offs.
+
+● Creating a backend application in Python(Flask) to automate the execution of the
+model by taking in any sample dataset
+
+<img src = "https://github.com/user-attachments/assets/873da6a8-39df-4cf3-a54a-dc5fa4f76741" width = "800"><br/>
+
+A backend application was developed using Python's Flask framework to
+automate the execution of the predictive model. This application serves as an
+interface for users to upload any sample dataset, triggers the model execution
+process, and returns the evaluation metrics seamlessly, thereby streamlining the
+predictive workflow.
+
+The Flask app defines a POST endpoint (/execute-notebook) that accepts
+user-uploaded CSV files as test datasets. Upon receiving a file, the app saves it
+with a unique identifier and employs Papermill to execute the Jupyter Notebook
+(Customer_Retention_Prediction_Model.ipynb) with the provided
+dataset. After execution, the app reads the generated metrics_output.json
+file containing key performance metrics and returns these metrics as a JSON
+response to the user. Robust error handling ensures that any issues during
+notebook execution are captured and communicated effectively, while temporary
+files are cleaned up to maintain a tidy environment.
+
+● Creating a simple, user-friendly frontend that can be used by both technical and
+non-technical staff to see the results of the Customer Retention Prediction Model
+
+<img src = "https://github.com/user-attachments/assets/5ad5156f-ec03-4e0b-8a72-b6b736023ba5" width = "800"><br/>
+
+A user-friendly frontend interface was designed to allow both technical and
+non-technical staff to interact with the Customer Retention Prediction Model
+effortlessly. This interface enables users to upload test datasets and view the
+resulting performance metrics without requiring deep technical knowledge,
+thereby democratizing access to predictive insights.
+
+The frontend was developed using web technologies such as HTML, CSS, and
+JavaScript, ensuring a clean and intuitive user experience. It features a simple
+upload form where users can select and submit their test datasets. Upon
+submission, the frontend communicates with the Flask backend via HTTP POST
+requests, sending the uploaded file for processing. Once the backend returns the
+evaluation metrics, the frontend displays these results in an organized manner,
+using visual elements like charts or summary tables to enhance readability and
+comprehension. Error messages and status indicators provide feedback on the
+processing status, ensuring transparency and user confidence.
+
+● Delivering this business tool as the final output of this project
+
+<img src = "https://github.com/user-attachments/assets/ebba42e8-d213-45ad-976d-8f1eb4db6812" width = "800"><br/>
+
+The culmination of this project resulted in a comprehensive business tool that
+integrates data preprocessing, machine learning model execution, and user
+interaction into a cohesive system. This tool empowers the organization to
+predict customer churn accurately and take proactive measures to enhance
+retention strategies, thereby driving business growth and customer satisfaction.
+
+The final tool combines the Flask backend and the user-friendly frontend,
+allowing seamless interaction between users and the predictive model. Users
+can upload any test dataset through the frontend, triggering the backend to
+execute the Jupyter Notebook and process the data. The tool outputs key
+performance metrics and identifies customers at risk of disengagement, providing
+actionable insights.
 
 
 
