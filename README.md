@@ -1,2 +1,5 @@
 # Customer-Retention-Prediction-Model
-AMEX WICSE Shadowing Program
+
+American Express Women in Computer Science Engineering Shadowing Program Project
+
+# Project Description
