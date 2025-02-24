@@ -183,5 +183,20 @@ execute the Jupyter Notebook and process the data. The tool outputs key
 performance metrics and identifies customers at risk of disengagement, providing
 actionable insights.
 
+# Resources Used
+
+● Python<br/>
+● Flask<br/>
+● Jupyter Notebook<br/>
+● Papermill<br/>
+● Pandas<br/>
+● NumPy<br/>
+● Scikit-learn<br/>
+● Imbalanced-learn (SMOTE)<br/>
+● XGBoost<br/>
+● LightGBM<br/>
+● UIUD<br/>
+● Matplotlib<br/>
+● RandomizedSearchCV<br/>
 
 
